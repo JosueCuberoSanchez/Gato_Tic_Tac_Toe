@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/thirdRowYellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondRowYellow">
+
+        <ImageView
+            android:id="@+id/y20"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteY="329dp" />
+
+        <ImageView
+            android:id="@+id/y21"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="329dp" />
+
+        <ImageView
+            android:id="@+id/y22"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="329dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRowYellow"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/y10"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <ImageView
+            android:id="@+id/y11"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <ImageView
+            android:id="@+id/y12"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="192dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstRowYellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1Text">
+
+        <ImageView
+            android:id="@+id/y00"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="303dp" />
+
+        <ImageView
+            android:id="@+id/y01"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <ImageView
+            android:id="@+id/y02"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/yellow"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="259dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRowRed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/board"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondRowRed">
+
+        <ImageView
+            android:id="@+id/r20"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteY="329dp" />
+
+        <ImageView
+            android:id="@+id/r21"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <ImageView
+            android:id="@+id/r22"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="218dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRowRed"
+        android:layout_width="0dp"
+        android:layout_height="137dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/r10"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <ImageView
+            android:id="@+id/r11"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <ImageView
+            android:id="@+id/r12"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstRowRed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstRowYellow">
+
+        <ImageView
+            android:id="@+id/r00"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="314dp" />
+
+        <ImageView
+            android:id="@+id/r01"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <ImageView
+            android:id="@+id/r02"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/token"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/red"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="223dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRowButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdRowYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/thirdRowYellow">
+
+        <Button
+            android:id="@+id/m20"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <Button
+            android:id="@+id/m21"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <Button
+            android:id="@+id/m22"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRowButtons"
+        android:layout_width="0dp"
+        android:layout_height="141dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/m10"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <Button
+            android:id="@+id/m11"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="196dp"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <Button
+            android:id="@+id/m12"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="183dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstRowButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/firstRowYellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstRowRed">
+
+        <Button
+            android:id="@+id/m00"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <Button
+            android:id="@+id/m01"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <Button
+            android:id="@+id/m02"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:text="@string/button"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="314dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/board"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="55dp"
+        android:alpha="0.9"
+        android:contentDescription="@string/token"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/board" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:onClick="resetAll"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="@+id/board"
+        app:layout_constraintTop_toBottomOf="@+id/board" />
+
+    <TextView
+        android:id="@+id/player2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player_2_0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/player_1_0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
